@@ -17,3 +17,41 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int x[]={a,b,c,d};
+	int z[4];
+
+     for(int i=0;i<4;i++){
+		z[i]=rand()%4;
+		for(int j=0;j<i;j++){
+		   if(z[i]==z[j]){
+			i--;
+			  break ;
+		   }
+		}
+	 }
+    a=x[z[0]];
+	 b=x[z[1]];
+	  c=x[z[2]];
+	   d=x[z[3]];
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
